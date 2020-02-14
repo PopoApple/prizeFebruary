@@ -1,0 +1,137 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-size: 24px;
+}
+div {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: none;
+  width: 100%;
+  background-image: url('../images/bg.png');
+  background-repeat: repeat-y;
+  background-size: 720px 742px;
+  position: relative;
+  padding-bottom: 200px;
+  padding-top: 560px;
+  .header {
+    width: 100%;
+    height: 563px;
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    background-size: 826px 646px;
+    background-position: -53px -64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .btn-rules {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 121px;
+    height: 40px;
+    line-height: 42px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #fff;
+    color: #4784EF;
+    text-align: center;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    .block-main {
+      .wrap {
+        display: none;
+      }
+      &.block-main-no-pay {
+        .wrap-no-pay {
+          display: block;
+        }
+      }
+      &.block-main-payed {
+        .wrap-payed {
+          display: block;
+        }
+      }
+      &.block-main-geted {
+        .wrap-geted {
+          display: block;
+        }
+      }
+      .tips {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        &.tips-to-recharge {
+          margin-top: 2px;
+        }
+        &.tips-success-get {
+          margin: 14px 0 4px;
+        }
+      }
+      .btn {
+        width: 534px;
+        height: 80px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+      .btn-recharge {
+        background-image: url('../images/btn_recharge.png');
+      }
+      .btn-recharged-get {
+        background-image: url('../images/btn_recharged-get.png');
+        margin-top: 10px;
+      }
+      .btn-get{
+        background-image: url('../images/btn-get.png');
+      }
+      .btn-go-shopping {
+        background-image: url('../images/modal-btn-shopping.png');
+      }
+    }
+    .block-info {
+      width: 644px;
+      height: 250px;
+      margin: 24px auto 0;
+      background: url('../images/block-info.png') no-repeat;
+      background-size: 100%;
+    }
+    .block-more {
+      width: 650px;
+      height: 508px;
+      padding-top: 70px;
+      background: url('../images/block-more.png') no-repeat;
+      background-size: 100%;
+      margin: 10px auto 0;
+      .img-banner {
+        display: block;
+        width: 580px;
+        height: 178px;
+        margin: 26px auto;
+      }
+    }
+    .block-rules {
+      width: 650px;
+      height: 1042px;
+      background: url('../images/block-rules.png') no-repeat;
+      background-size: 100%;
+      margin: 46px auto 0;
+    }
+  }
+  .bg-bottom {
+    width: 100%;
+    height: 292px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('../images/bg-bottom.png') no-repeat;
+    background-size: 795px 292px;
+    background-position: -37px 0;
+  }
+}

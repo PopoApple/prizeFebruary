@@ -1,0 +1,23 @@
+{
+  "name": "prizeFebruary",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PopoApple/prizeFebruary.git"
+  },
+  "author": "Popo Apple",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "postcss-px2rem": "^0.3.0"
+  }
+}

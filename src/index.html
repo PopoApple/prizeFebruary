@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充话费，优惠购</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <meta name="msapplication-tap-hightlight" content="no">
+    <script src="https://www.189.cn/client/wap/common/js/s_code.js"></script>
+    <script>
+        window.trkPageStart = new Date().getTime();
+    </script>
+    <script src="js/base.js"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="btn-rules" onclick="onBtnRulesClick()">活动规则</div>
+        <div class="content">
+            <div class="block-main block-main-no-pay">
+                <div class="wrap wrap-no-pay">
+                    <div class="btn btn-recharge" onclick="onBtnRechargeClick()"></div>
+                    <div class="btn btn-recharged-get" onclick="onBtnGetRechargedClick()"></div>
+                    <div class="tips tips-to-recharge">充值成功，即可领取</div>
+                </div>
+                <div class="wrap wrap-payed">
+                    <div class="btn btn-get" onclick="onBtnGetClick()"></div>
+                </div>
+                <div class="wrap wrap-geted">
+                    <div class="tips tips-success-get">领取成功</div>
+                    <div class="btn btn-go-shopping" onclick="onBtnGoShoppingClick()"></div>
+                </div>
+            </div>
+            <div class="block-info"></div>
+            <div class="block-more">
+                <img src="./images/banner-4-to-5.png" class="img-banner" onclick="onBanner4To5Click()" />
+                <img src="./images/banner-sign-in.png" class="img-banner" onclick="onBannerSignInClick()" />
+            </div>
+            <div class="block-rules"></div>
+        </div>
+        <div class="bg-bottom"></div>
+    </div>
+    <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+    <script>
+        var vConsole = new VConsole();
+    </script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        window.trkFirstScreenEnd = new Date().getTime();
+        window.trkPageEnd = new Date().getTime();
+    </script>
+</body>
+</html>
