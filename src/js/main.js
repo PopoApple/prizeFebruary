@@ -88,7 +88,7 @@ function getEnvelope() {
                 case '-10005':
                     $('.block-main').attr('class', 'block-main block-main-geted');
                     _Utils.showConfirm({
-                        info: '您已领取过此权益',
+                        info: '您已领取过此权益抵扣券',
                         okBtnType: 'shopping',
                         onOk: goShopingMall 
                     });
