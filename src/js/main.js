@@ -1,5 +1,5 @@
-var origin = 'https://capp01.189.cn:6443';  //测试
-//var origin = 'https://wapmkt.189.cn:7443';  //生产
+//var origin = 'https://capp01.189.cn:6443';  //测试
+var origin = 'https://wapmkt.189.cn:7443';  //生产
 var ticket = _Utils.getQueryParam('ticket');
 var system = _Utils.getSystemInfo();
 var backLink = origin + '/grep/prizeFebruary/index.html';
