@@ -25,7 +25,7 @@
   display: block;
   font-size: 0.5rem;
   height: 1.388889rem;
-  margin: 1.527778rem 1.25rem 0 1.25rem;
+  margin: 1.527778rem 0.555556rem 0 0.555556rem;
   text-align: center;
   color: #333333;
 }
@@ -37,7 +37,7 @@
   color: red;
   height: 0.277778rem;
   line-height: 0.277778rem;
-  margin-top: 0.277778rem;
+  margin: 0.277778rem 0 0.083333rem;
 }
 
 .confirm .confirm-content .confirm-btn-ok {
