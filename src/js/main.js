@@ -71,8 +71,19 @@ function getEnvelope() {
                     $('.block-main').attr('class', 'block-main block-main-geted');
                     _Utils.showConfirm({
                         info: '恭喜您获得话费购商城3元抵扣券',
+                        tips: '*此抵扣券仅限权益券支付时使用',
                         okBtnType: 'shopping',
-                        onOk: goShopingMall
+                        onOk: function () {
+                            try {
+                                trk_wap_jt.trkAppButtonClick("点击前往话费购商城查看","pinganchongzhi-sy-tanch-0_1","","","");
+                            } catch (error) {}
+                            goShopingMall();
+                        }, 
+                        onCancel: function () {
+                            try {
+                                trk_wap_jt.trkAppButtonClick("点击前往话费购商城查看-关闭","pinganchongzhi-sy-tanch-0_2","","","");
+                            } catch (error) {}
+                        }
                     });
                     break;
                 case '-10001':

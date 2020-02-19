@@ -20,10 +20,19 @@
     .confirm-info {
       display: block;
       font-size: 36px;
-      height: 140px;
+      height: 100px;
       margin: 110px 90px 0 90px;
       text-align: center;
       color: #333333;
+    }
+    .confirm-tips {
+      display: block;
+      font-size: 24px;
+      text-align: center;
+      color: red;
+      height: 20px;
+      line-height: 20px;
+      margin-top: 20px;
     }
     .confirm-btn-ok {
       width: 534px;

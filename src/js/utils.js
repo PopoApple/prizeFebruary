@@ -45,6 +45,7 @@ var _Utils = {
       '<div class="confirm">' +
         '<div class="confirm-content">' +
             '<div class="confirm-info"></div>' +
+            '<div class="confirm-tips"></div>' +
             '<div class="confirm-btn-ok"></div>' +
             '<div class="confirm-btn-cancel"></div>' +
         '</div>' +
@@ -52,10 +53,12 @@ var _Utils = {
     );
     $('body').append($confirm).css({ overflow: 'hidden' });
     var info = options.info;
+    var tips = options.tips;
     var okBtnType = options.okBtnType;
     var onOk = options.onOk;
     var onCancel = options.onCancel;
     $('.confirm-info').text(info);
+    $('.confirm-tips').text(tips);
     $('.confirm-btn-ok').addClass('confirm-btn-ok-' + okBtnType).on('click', function () {
       $confirm.remove();
       $('body').css({ overflow: 'auto' });

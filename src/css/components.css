@@ -24,10 +24,20 @@
 .confirm .confirm-content .confirm-info {
   display: block;
   font-size: 0.5rem;
-  height: 1.944444rem;
+  height: 1.388889rem;
   margin: 1.527778rem 1.25rem 0 1.25rem;
   text-align: center;
   color: #333333;
+}
+
+.confirm .confirm-content .confirm-tips {
+  display: block;
+  font-size: 0.333333rem;
+  text-align: center;
+  color: red;
+  height: 0.277778rem;
+  line-height: 0.277778rem;
+  margin-top: 0.277778rem;
 }
 
 .confirm .confirm-content .confirm-btn-ok {
