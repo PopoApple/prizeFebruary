@@ -1,5 +1,5 @@
-//var origin = 'https://capp01.189.cn:6443';  //测试
-var origin = 'https://wapmkt.189.cn:7443';  //生产
+var origin = 'https://capp01.189.cn:6443';  //测试
+//var origin = 'https://wapmkt.189.cn:7443';  //生产
 var ticket = _Utils.getQueryParam('ticket');
 var system = _Utils.getSystemInfo();
 var backLink = origin + '/grep/prizeFebruary/index.html';
@@ -51,7 +51,7 @@ function onBtnGetRechargedClick () {
 }
 function onBtnGetClick () {
     try {
-        trk_wap_jt.trkAppButtonClick("领取话费购商城优惠券","pinganchongzhi-sy-cz-0_1","","","");
+        trk_wap_jt.trkAppButtonClick("立即领取","pinganchongzhi-sy-cz-0_1","","","");
     } catch (error) {}
     getEnvelope();
 }
@@ -70,18 +70,19 @@ function getEnvelope() {
                 case '10000':
                     $('.block-main').attr('class', 'block-main block-main-geted');
                     _Utils.showConfirm({
-                        info: '恭喜您获得话费购商城3元抵扣券',
+                        info: '恭喜您获得话费购商城',
                         tips: '*此抵扣券仅限权益券支付时使用',
-                        okBtnType: 'shopping',
+                        importantInfo: '3元抵扣券',
+                        okBtnType: 'use',
                         onOk: function () {
                             try {
-                                trk_wap_jt.trkAppButtonClick("点击前往话费购商城查看","pinganchongzhi-sy-tanch-0_1","","","");
+                                trk_wap_jt.trkAppButtonClick("前往使用","pinganchongzhi-sy-tanch-0_1","","","");
                             } catch (error) {}
                             goShopingMall();
                         }, 
                         onCancel: function () {
                             try {
-                                trk_wap_jt.trkAppButtonClick("点击前往话费购商城查看-关闭","pinganchongzhi-sy-tanch-0_2","","","");
+                                trk_wap_jt.trkAppButtonClick("前往使用-关闭","pinganchongzhi-sy-tanch-0_2","","","");
                             } catch (error) {}
                         }
                     });
@@ -121,8 +122,8 @@ function onBtnGoShoppingClick () {
     goShopingMall();
 }
 function goShopingMall () {
-    var link = 'https%3a%2f%2fe.189.cn%2fstore%2fexternal%2fredirect.do%3fred%3dhgr%26code%3d%24ticket%24';
-    goH5Page(link, '天翼话费购商城');
+    var link = 'https://e.189.cn/store/wap/newcoupon/index.html?t=huango-hfg#/couponOrder';
+    goH5Page(link, '话费购商城-优惠券列表页');
 }
 function onBanner4To5Click () {
     try {

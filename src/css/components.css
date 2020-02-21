@@ -30,6 +30,17 @@
   color: #333333;
 }
 
+.confirm .confirm-content .confirm-importantInfo {
+  display: block;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  height: 0.555556rem;
+  line-height: 0.555556rem;
+  margin: -0.555556rem 0 0.083333rem;
+}
+
 .confirm .confirm-content .confirm-tips {
   display: block;
   font-size: 0.333333rem;
@@ -54,6 +65,10 @@
 
 .confirm .confirm-content .confirm-btn-ok.confirm-btn-ok-shopping {
   background-image: url(../images/modal-btn-shopping.png);
+}
+
+.confirm .confirm-content .confirm-btn-ok.confirm-btn-ok-use {
+  background-image: url(../images/modal-btn-use.png);
 }
 
 .confirm .confirm-content .confirm-btn-cancel {
