@@ -122,7 +122,7 @@ function onBtnGoShoppingClick () {
     goShopingMall();
 }
 function goShopingMall () {
-    var link = 'https://e.189.cn/store/wap/newcoupon/index.html?t=huango-hfg#/couponOrder';
+    var link = 'https://e.189.cn/store/external/redirect.do?code=$ticket$&red=couponOrder';
     goH5Page(link, '话费购商城-优惠券列表页');
 }
 function onBanner4To5Click () {
