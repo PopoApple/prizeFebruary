@@ -16,6 +16,7 @@ $(function () {
             $('.wrapper').css({ 'display': 'block' });
             if (res.result === '10000') {
                 $('.block-main').attr('class', 'block-main block-main-payed');
+                onBtnGetClick();
             } else if (res.result === '-10005') {
                 $('.block-main').attr('class', 'block-main block-main-geted');
             }
@@ -123,7 +124,7 @@ function onBtnGoShoppingClick () {
 }
 function goShopingMall () {
     var link = 'https://e.189.cn/store/external/redirect.do?code=$ticket$&red=couponOrder';
-    goH5Page(link, '话费购商城-优惠券列表页');
+    goH5Page(link, '话费购商城列表页');
 }
 function onBanner4To5Click () {
     try {
