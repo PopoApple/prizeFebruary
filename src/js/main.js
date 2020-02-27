@@ -123,7 +123,7 @@ function onBtnGoShoppingClick () {
     goShopingMall();
 }
 function goShopingMall () {
-    var link = 'https://e.189.cn/store/external/redirect.do?code=$ticket$&red=couponOrder';
+    var link = 'https://e.189.cn/store/external/redirect.do?code=$ticket$&red=huangotabIndex1';
     goH5Page(link, '话费购商城列表页');
 }
 function onBanner4To5Click () {
